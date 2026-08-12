@@ -1,0 +1,64 @@
+/*
+ * © Copyright 2026 Adobe. All rights reserved.
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ */
+
+//== Font
+
+$font-family: "Source Sans Pro", "Helvetica Neue", helvetica, arial, sans-serif;
+$font-family-title: "Source Serif Pro", "Helvetica Neue", helvetica, arial, sans-serif;
+
+// ====== colors ======
+$dark-gray: #666;
+$gray: #888;
+$light-gray: #969696;
+$very-light-gray: #e6e6e6;
+$white: #fff;
+$error: #ca1b15;
+$light-error: rgb(235 60 54 / 5%);
+$success: #23b482;
+$silver: #ccc;
+$panel-bg-color: #efefef;
+$wizard-bg-color: #fafafa;
+$tnc-header-bg-color: #afb0b5;
+$dark-blue: #168be8;
+$vivid-blue: #147af3;
+
+// ====== font size======
+$font-xlg: 1.5rem;
+$font-lg: 1.25rem;
+$font-md: 1rem;
+$font-sm: 0.875rem;
+$font-xsm: 0.75rem;
+
+// ====== space ======
+$field-margin: 0.25rem 0;
+$label-top-margin: 10px;
+$field-height: 40px;
+$field-padding-left: 10px;
+$error-top-margin: 10px;
+$field-right-margin: 20px;
+$panel-right-margin: 0;
+$radio-checkbox-gap: 20px;
+
+//== Grid
+
+$max_col: 12;
+

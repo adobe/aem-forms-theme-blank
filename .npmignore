@@ -1,0 +1,36 @@
+
+# dont include parcel cache / build config in the published package
+.parcel-cache
+.DS_Store
+.parcelrc
+
+# dont include github workflows
+.github
+
+# make sure no .env file is present in the published package - AEM adds this file when downloading the theme
+.env
+.env.test
+env_template
+
+### IntelliJ ###
+.idea/
+*.iml
+
+# Logs
+*.log
+npm-debug.log*
+
+# source files - only the built dist/ output is published
+src/
+
+# Dependency directories
+node_modules/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Output of 'npm pack'
+*.tgz
+
+# parcel-bundler cache (https://parceljs.org/)
+.cache

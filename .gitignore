@@ -1,0 +1,31 @@
+# dont include parcel cache into the final theme.zip file
+.parcel-cache
+.cache
+.DS_Store
+
+# make sure no .env file is present in the theme.zip file - AEM adds this file when downloading the theme
+.env
+.env.test
+
+### IntelliJ ###
+.idea/
+*.iml
+
+# Logs
+*.log
+npm-debug.log*
+
+# Dependency directories
+node_modules/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Output of 'npm pack'
+*.tgz
+
+# Parcel build output
+dist
+
+# Clientlib output (npm run create-clientlib)
+/theme-clientlibs

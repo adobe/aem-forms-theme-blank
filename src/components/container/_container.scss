@@ -1,0 +1,45 @@
+/*
+ * © Copyright 2026 Adobe. All rights reserved.
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ */
+
+/* These rules cannot be expressed in the AEM Style System (theme editor):
+   - [dir="rtl"] ancestor-attribute selectors have no compiler support (the Theme Editor
+     has no dir/RTL-conditional mechanism at all)
+   - the hamburger-menu breakpoint rule is a compound selector spanning four unrelated
+     components gated on a sibling <form> attribute - no single component's style tree
+     can express that
+   They are shipped here so the hamburger-menu navigation still works under blank theme. */
+[dir="rtl"] .cmp-adaptiveform-container__hamburger-menu-button--prev {
+  transform: rotate(180deg);
+}
+[dir="rtl"] .cmp-adaptiveform-container__hamburger-menu-button--next {
+  transform: rotate(180deg);
+}
+@media (max-width: 767px) {
+  form[data-cmp-hamburger-menu-enabled="true"] {
+    .cmp-tabs__tablist,
+    .cmp-verticaltabs__tablist,
+    .cmp-adaptiveform-wizard__tabList,
+    .cmp-adaptiveform-wizard__containerNav {
+      display: none !important;
+    }
+  }
+}
