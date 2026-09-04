@@ -23,10 +23,11 @@
 /* [dir="rtl"] ancestor-attribute selectors are not supported by the AEM Style System
    (theme editor) — this is an RTL implementation detail shipped here directly. */
 [dir="rtl"] .datepicker-calendar-icon {
-  left: 30px;
-  right: unset;
+  inset-inline-start: 30px;
+  inset-inline-end: unset;
 }
+
 [dir="rtl"] .cmp-adaptiveform-datepicker__calendar-icon {
-  left: 30px;
-  right: unset;
+  inset-inline-start: 30px;
+  inset-inline-end: unset;
 }
