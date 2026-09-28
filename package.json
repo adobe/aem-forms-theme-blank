@@ -1,6 +1,6 @@
 {
     "name": "af-blank-theme",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Basic AEM Forms blank theme for core components",
     "license": "MIT License, Copyright 2026 Adobe Systems Incorporated",
     "scripts": {
@@ -64,4 +64,3 @@
         }
     }
 }
-
